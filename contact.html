@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>联系我 - 中南财经政法大学</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 页眉和导航代码同index.html -->
+  
+  <main class="main-content">
+    <div class="container">
+      <h2>联系我</h2>
+      
+      <section class="contact-info">
+        <h3>我的联系方式</h3>
+        <p><strong>电话:</strong> 15926721535</p>
+        <p><strong>邮箱:</strong> yinpu@zuel.edu.cn</p>
+        <p><strong>地址:</strong> 中南财经政法大学南湖校区信息管理系</p>
+        <p><strong>宿舍:</strong> 环湖公寓六栋</p>
+      </section>
+      
+      <section class="contact-form">
+        <h3>给我留言</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" id="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="type">留言类型</label>
+            <select id="type">
+              <option value="study">学习交流</option>
+              <option value="project">项目合作</option>
+              <option value="activity">活动邀请</option>
+              <option value="other">其他事项</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">留言内容</label>
+            <textarea id="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-submit">发送留言</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  
+  <!-- 页脚区同index.html -->
+</body>
+</html>
