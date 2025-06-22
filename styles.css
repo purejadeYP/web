@@ -1,0 +1,148 @@
+/* ========= 全局样式重置 ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff; /* 白色背景匹配图片 */
+    padding: 0;
+}
+
+/* ========= 顶部标题栏（深蓝色） ========= */
+.header {
+    background-color: #1a365d; /* 图片中的深蓝色 */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 3px solid #2c6fc8; /* 图片底部的蓝色横线 */
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ========= 主内容区（居中显示） ========= */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ========= 标题样式 ========= */
+h2 {
+    color: #1a365d; /* 深蓝色标题匹配图片 */
+    font-size: 26px;
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin: 20px 0 15px;
+}
+
+/* ========= 个人信息样式 ========= */
+.personal-info, .hobbies {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 17px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: flex-start;
+}
+
+ul li:before {
+    content: "·";
+    font-size: 24px;
+    color: #2c6fc8; /* 匹配图片中的圆点颜色 */
+    margin-right: 12px;
+    line-height: 1;
+}
+
+/* ========= 兴趣爱好图标样式 ========= */
+.hobbies li {
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.hobbies li:before {
+    content: "•"; /* 改为实心圆点 */
+    color: #e74c3c; /* 红色强调匹配兴趣爱好 */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ========= 页脚样式（深蓝色） ========= */
+.footer {
+    background-color: #1a365d; /* 与顶部相同的深蓝色 */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+/* ========= 响应式设计 ========= */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 26px;
+    }
+    
+    .header p {
+        font-size: 16px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    ul li {
+        font-size: 16px;
+    }
+}
